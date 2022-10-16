@@ -1,0 +1,8 @@
+.mainForm {
+  margin-left: 260px;
+}
+@media only screen and (max-width: 600px) {
+  .mainForm {
+    margin-left: 2px;
+  }
+}
