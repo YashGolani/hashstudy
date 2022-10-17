@@ -16,10 +16,14 @@ import { useState } from "react";
 
 function App() {
   const [age, setAge] = useState("");
+  const [invoice, setInvoice] = useState("");
   const [lat, setLat] = useState("");
   const [long, setLong] = useState("");
   const handleChange = (event) => {
     setAge(event.target.value);
+  };
+  const handleInvoice = (event) => {
+    setInvoice(event.target.value);
   };
   return (
     <div className="App">
@@ -137,7 +141,7 @@ function App() {
               variant="h6"
               noWrap
               component="div"
-              sx={{ color: "#e6ac00" }}
+              sx={{ color: "#e6ac00", mb: 2 }}
             >
               4.Retainer Details
             </Typography>
@@ -268,7 +272,6 @@ function App() {
                   p: 2,
                   border: "1px solid grey",
                   height: "110px",
-                  // width: "130px",
                 }}
               >
                 <IconButton
@@ -294,7 +297,6 @@ function App() {
                   p: 2,
                   border: "1px solid grey",
                   height: "110px",
-                  // width: "130px",
                 }}
               >
                 <IconButton
@@ -320,7 +322,6 @@ function App() {
                   p: 2,
                   border: "1px solid grey",
                   height: "110px",
-                  // width: "130px",
                 }}
               >
                 <IconButton
@@ -375,9 +376,9 @@ function App() {
                 <Select
                   labelId="demo-simple-select-label"
                   id="demo-simple-select"
-                  // value={age}
+                  value={invoice}
                   label="Select an option"
-                  onChange={handleChange}
+                  onChange={handleInvoice}
                 >
                   <MenuItem value={10}>Ten</MenuItem>
                   <MenuItem value={20}>Twenty</MenuItem>
