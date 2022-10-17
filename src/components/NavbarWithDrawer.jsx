@@ -124,7 +124,6 @@ function ResponsiveDrawer(props) {
             sx={{
               flexGrow: 1,
               display: { xs: "flex" },
-              // justifyContent: { xs: "space-evenly" },
               alignItems: { xs: "center" },
             }}
           >
