@@ -120,7 +120,14 @@ function ResponsiveDrawer(props) {
         }}
       >
         <Toolbar>
-          <Box sx={{ flexGrow: 1 }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "flex" },
+              // justifyContent: { xs: "space-evenly" },
+              alignItems: { xs: "center" },
+            }}
+          >
             <IconButton
               color="inherit"
               aria-label="open drawer"
